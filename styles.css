@@ -1,0 +1,160 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*##############################*/
+/*NAVIGATION BAR*/
+
+/*layout of navigation bar*/
+.naviBar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+/*link formatting*/
+.naviBar a{
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #555555;
+    white-space:nowrap;
+}
+
+/*changes links apperances when hovered over*/
+.naviBar a:hover {
+    background-color: deeppink;
+    color: white;
+    padding: 20px 40px;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropContent {
+    display: none;
+    position: absolute;
+    top: 58px;
+    background: white;
+    width: 140.5px
+}
+
+/* Show the dropdown menu on hover */
+.ourTipsNavi:hover .dropContent {
+    display: flex;
+    flex-direction: column;
+}
+
+/*keeps Our Tips shaded even when on drop down menu*/
+.ourTipsNavi:hover .ourTipsText {
+    background-color:deeppink;
+    color: white;
+}
+
+
+/*##############################*/
+
+/*Site title & header*/
+
+.siteHeader {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(housesAbove.jpg);
+        height: 50vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: white;        
+}
+
+.siteHeader p {
+    max-width: 50vh; /*vh is repsonsive to screen size*/
+}
+
+/*##############################*/
+
+/*Author Profiles*/
+
+.authorTitle{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+    color: #c2179c;
+}
+
+.authorProfiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: baseline;
+    padding-bottom: 20px;
+    
+}
+
+.author {
+    width:38%;
+    margin: 10px;
+    background-color: #fafafa;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 2px 3px #f0e6ee;
+    
+}
+
+.author:hover {
+    background-color: deeppink;
+    color: white;
+    box-shadow: 2px 3px #827980;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+}
+
+/*##############################*/
+
+/*Code First Girls*/
+
+
+
+.codeFirstGirls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,#ff00bf,#ff007f);
+    color: white;
+    padding:20px;
+    
+}
+
+.codeFirstGirls h3 {
+    width: 30%;
+}
+
+.codeFirstGirls button {
+    height: 60px;
+    width: 200px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 3px #333333;
+}
+
+.codeFirstGirls button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 3px #eeeeee;
+}
